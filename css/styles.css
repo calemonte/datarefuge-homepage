@@ -18,7 +18,17 @@ body {
 
 header,
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
   height: 20vh;
+}
+
+footer {
+  height: 10vh;
 }
 
 header,
@@ -30,15 +40,9 @@ aside {
 
 /* 
 =====================
-Header
+Header, Footer
 =====================
 */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 #logo {
   width: 250px;
@@ -50,13 +54,16 @@ header {
   height: auto;
 }
 
-#nav > ul {
+#nav > ul,
+#footer-links > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 #nav > ul > li,
+a,
+#footer-links > ul > li,
 a {
   padding: 6px;
   display: inline;
@@ -148,7 +155,8 @@ Main Content
 }
 
 @media screen and (max-width: 455px) {
-  header {
+  header,
+  footer {
     flex-direction: column;
   }
 }
