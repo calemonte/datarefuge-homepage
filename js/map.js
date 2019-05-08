@@ -9,12 +9,10 @@ for (let i = 0; i < locations.length; i++) {
   L.marker([locations[i].lat, locations[i].lon])
     .addTo(map)
     .bindPopup(
-      `<strong>${locations[i].title}</strong>
-       <br> 
-       ${locations[i].description}
-       <br>
+      `<h1>${locations[i].title}</h1>
+       <p>${locations[i].description}</p>
        <a href='${
          locations[i].link
-       }' target='_blank' rel='noopener'>Learn more</a>`
+       }' target='_blank' rel='noopener'><button>Learn more</button></a>`
     );
 }

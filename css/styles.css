@@ -120,7 +120,7 @@ Masthead
 #tiles > button {
   flex-grow: 1;
   margin: 2px 2px;
-  background-color: #4caf50;
+  background-color: rgb(50, 170, 25);
   border: none;
   border-radius: 4px;
   color: white;
@@ -161,10 +161,41 @@ Main Content
   order: -1;
 }
 
+/* 
+=====================
+Mapbox
+=====================
+*/
+
 #mapid {
   height: 400px;
   width: 100%;
 }
+
+.leaflet-popup-content > h1 {
+  color: rgb(50, 170, 25);
+}
+
+.leaflet-popup-content > a > button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(50, 170, 25);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.leaflet-popup-content > a > button:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+/* 
+=====================
+Media Queries
+=====================
+*/
 
 @media screen and (max-width: 455px) {
   header,
