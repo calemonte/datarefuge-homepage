@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Data Refuge</title>
+    <meta
+      name="description"
+      content="Data Refuge is a community-driven, collaborative project to preserve public climate and environmental data"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <!-- Mapbox -->
+    <header>
+      <div id="logo">
+        <img
+          alt="Data Refuge Logo"
+          src="./images/LogoDataRefugeTitleColor.png"
+        />
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="https://www.datarefugestories.org/our-story-1"
+              >Our Stories</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section id="mast">
+      <div id="intro">
+        Data Refuge is a community-driven, collaborative project to preserve
+        public climate and environmental data. When we document the many ways
+        diverse communities use data, we can also advocate for future data. We
+        want to hear your data stories!
+      </div>
+      <div id="tiles">
+        <button
+          onclick="window.open('https://www.datarefugestories.org/data-remediations');"
+        >
+          Data Remediations
+        </button>
+        <button
+          onclick="window.open('http://stories.datarefuge.org/geolocation/map/browse');"
+        >
+          Data Storybank
+        </button>
+        <button
+          onclick="window.open('https://drive.google.com/drive/u/0/folders/1BRjkz7XGrC7u8Sl_lRI0-w82POrLRP6C');"
+        >
+          Toolkits
+        </button>
+        <button onclick="window.open('https://www.datarefuge.org/dataset');">
+          Data Catalog
+        </button>
+      </div>
+    </section>
+    <section id="main">
+      <article>
+        <div id="mapid"></div>
+      </article>
+      <!-- <nav>Nav</nav>
+      <aside>Aside</aside> -->
+    </section>
+    <footer>Footer</footer>
+
+    <!-- Map scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
