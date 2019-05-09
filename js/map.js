@@ -15,7 +15,7 @@
       for (let i = 1; i < linebreaks.length; i++) {
         let col = CSVtoArray(linebreaks[i]);
 
-        if (col.length == headers.length) {
+        if (col.length === headers.length) {
           let location = {};
           for (let j = 0; j < headers.length; j++) {
             location[headers[j]] = col[j];
