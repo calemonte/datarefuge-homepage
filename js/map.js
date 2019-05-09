@@ -1,6 +1,6 @@
 (function initMap() {
   const request = new XMLHttpRequest();
-  request.open("GET", "./data/locations.csv", true);
+  request.open("GET", "./datarefuge-homepage/data/locations.csv", true);
 
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
