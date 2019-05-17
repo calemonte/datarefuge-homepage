@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
-  font-family: 'Asap', Helvetica, Arial, sans-serif;
+  font-family: "Asap", Helvetica, Arial, sans-serif;
 }
 
 header,
@@ -90,17 +90,6 @@ Masthead
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  /* background: #c9d6ff; */
-  /* background: -webkit-linear-gradient(
-    to right,
-    #e2e2e2,
-    #c9d6ff
-  );
-  background: linear-gradient(
-    to right,
-    #e2e2e2,
-    #c9d6ff
-  ); */
 }
 
 #intro {
@@ -110,16 +99,40 @@ Masthead
   font-size: 1.2em;
 }
 
+#explore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  background: #494b53;
+  color: white;
+  /* border-top: 2px dashed white; */
+}
+
+#explore-head {
+  padding: 0 1em;
+  font-size: 2em;
+}
+
 #tiles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   padding-bottom: 12px;
 }
 
-#tiles > button {
-  flex-grow: 1;
+.tile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 300px;
+  padding: 6px;
+}
+
+.tile-button {
   margin: 2px 2px;
   background-color: rgb(50, 170, 25);
   border: none;
@@ -132,7 +145,7 @@ Masthead
   cursor: pointer;
 }
 
-#tiles > button:hover {
+.tile-button:hover {
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
@@ -197,6 +210,12 @@ Mapbox
 Media Queries
 =====================
 */
+
+@media screen and (max-width: 815px) {
+  .tiles {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 455px) {
   header,
