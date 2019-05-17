@@ -105,9 +105,10 @@ Masthead
   width: 100%;
   margin: 0 auto;
   padding: 2px;
-  background: #494b53;
-  color: white;
-  /* border-top: 2px dashed white; */
+  /* background: #494b53; */
+  /* color: white; */
+  border-top: 2px dashed #494b53;
+  border-bottom: 2px dashed #494b53;
 }
 
 #explore-head {
@@ -184,6 +185,11 @@ Mapbox
 #mapid {
   height: 400px;
   width: 100%;
+}
+
+#mapid-head {
+  padding: 0 1em;
+  font-size: 2em;
 }
 
 .leaflet-popup-content > h1 {
