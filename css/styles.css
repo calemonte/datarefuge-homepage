@@ -217,13 +217,7 @@ Media Queries
 =====================
 */
 
-@media screen and (max-width: 815px) {
-  .tiles {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 515px) {
   header,
   footer {
     flex-direction: column;
