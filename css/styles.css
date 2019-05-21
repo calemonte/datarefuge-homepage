@@ -24,7 +24,7 @@ footer {
 }
 
 header {
-  height: 20vh;
+  height: 10vh;
 }
 
 footer {
@@ -93,10 +93,22 @@ Masthead
 }
 
 #intro {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 1.2em;
+  background: #494b53;
+  color: white;
+}
+
+#intro > p {
+  width: 70%;
+  margin: 1em auto;
+}
+
+#intro-lead {
+  font-size: 1.5em;
+  width: 90%;
 }
 
 #explore {
@@ -107,7 +119,7 @@ Masthead
   padding: 2px;
   /* background: #494b53; */
   /* color: white; */
-  border-top: 2px dashed #494b53;
+  /* border-top: 2px dashed #494b53; */
   border-bottom: 2px dashed #494b53;
 }
 
@@ -221,5 +233,17 @@ Media Queries
   header,
   footer {
     flex-direction: column;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  #intro > p {
+    width: 85%;
+  }
+
+  #intro-lead {
+    font-size: 1.2em;
   }
 }

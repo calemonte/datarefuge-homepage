@@ -46,7 +46,7 @@ function genMap(locations) {
   }).addTo(map);
 
   for (let i = 0; i < locations.length; i++) {
-    console.log(locations[i]);
+    // console.log(locations[i]);
     L.marker([locations[i].lat, locations[i].lon])
       .addTo(map)
       .bindPopup(
