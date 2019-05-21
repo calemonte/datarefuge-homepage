@@ -208,6 +208,10 @@ Mapbox
   color: rgb(50, 170, 25);
 }
 
+.leaflet-popup-content > a {
+  padding: 0;
+}
+
 .leaflet-popup-content > a > button {
   width: 100%;
   padding: 10px;
